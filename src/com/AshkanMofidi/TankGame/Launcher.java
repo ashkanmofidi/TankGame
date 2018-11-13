@@ -3,9 +3,8 @@ package com.AshkanMofidi.TankGame;
 import com.AshkanMofidi.TankGame.Display.Display;
 
 /*
-This Launcher class is only responsible for starting up our game.
-The main method is the first method that any java program runs first.
-
+    This Launcher class is only responsible for starting up our game.
+    The main method is the first method that any java program runs first.
  */
 public class Launcher {
 
