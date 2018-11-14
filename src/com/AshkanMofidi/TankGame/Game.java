@@ -1,7 +1,8 @@
 package com.AshkanMofidi.TankGame;
-
-
 import com.AshkanMofidi.TankGame.Display.Display;
+
+import java.awt.*;
+import java.awt.image.BufferStrategy;
 
 /*
     The Game class is the main class of our game
@@ -46,6 +47,19 @@ public class Game implements Runnable{
     //We initialize this thread object by two methods, start() & stop()
     private Thread thread;
 
+    /*
+        To render, we need to define two variable
+        BufferStrategy is basically a way for computer to draw things on the screen and it uses buffer to do that
+        Buffer? a buffer is basically a hidden computer screen within our computer(a bunch of memory in our computer that holds the same data as
+        our actual computer screen)
+        Basically we are doing to draw everything into the buffer first, then when the drawing ends, this buffer is going to another buffer
+        after that redraw again then that buffer goes into the actual screen so that we can see the actual drawings
+        Why do we need to first draw into the buffer (a hidden screen) and then to the actual screen?
+        -We do that to prevent any flickering into our game, to not be like a old computer game which has lots of flickering and low graphic quality
+     */
+    private BufferStrategy bs;
+    private Graphics g;
+
     //We have ot initialize our display object in the Game constructor
     public Game(String title, int width, int height){
         this.width = width;
@@ -76,9 +90,47 @@ public class Game implements Runnable{
 
     /*
         This render method draw our game for us
+        to draw we have access to canvas object inside the display class
+        since the canvas object is set to private we have to use its setters and getters
+        Every time this render method runs we need to do the same thing over and over again
      */
     private void render(){
+        /*
+            We need to initialize the above defined BufferStrategy object into the BufferStrategy of our display canvas
+            BufferStrategy gets how many buffers that the canvas uses
+         */
 
+        bs = display.getCanvas().getBufferStrategy();
+        /*
+            if this is the first time running our game, our BufferStrategy or canvas doesn't have any BufferStrategy, so it has no clue how many
+            buffer to use
+            So, we create a buffer strategy for our canvas if it doesn't have one yet
+            createBufferStrategy(TAKES THE NUMBER OF BUFFERS IT USE)
+         */
+        if(bs == null){
+            display.getCanvas().createBufferStrategy(3);
+            return;
+        }
+        /*
+            Now that I can sure that our BufferStrategy has been set, we can begin drawing
+            So, to draw into the canvas we are going to use our Graphics variable as something like a paintbrush
+            Therefore, we set our Graphics objects that we define as g by getting the getDrawGraphics of our BufferStrategy
+         */
+        g = bs.getDrawGraphics();
+        //DRAW HERE
+        /*
+            this method fill the rectangle inside our JFrame window
+            this method takes 4 parameters:  x, y, width, height
+            so, we should get a full rectangle filling out our JFrame window
+         */
+        g.fillRect(0, 0, width, height);
+
+        //END DRAWING!
+        /*
+            We have to actually tell java that we are done with our drawing
+         */
+        bs.show();
+        g.dispose();
     }
 
     /*
@@ -152,7 +204,7 @@ public class Game implements Runnable{
             return;// and don't do the rest of these codes
         running = false;
         try {
-            //To stop our thread safely we use the thread.join()
+            //To close our thread safely we use the thread.join()
             thread.join();
         } catch (InterruptedException e) {
             e.printStackTrace();

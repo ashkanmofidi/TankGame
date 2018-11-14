@@ -94,15 +94,22 @@ public class Display {
         frame.add(canvas);
         //We have to use pack func which resize the window that we can be sure we can see all of it
         frame.pack();
-
-
-
-
-
-
-
-
     }
+
+        /*
+            Since, the canvas is set to private, we need to define the setter and getter in order to get
+            access to it from points outside of this class
+         */
+    public Canvas getCanvas(){
+        return canvas;
+    }
+
+
+
+
+
+
+
 
 
 }
