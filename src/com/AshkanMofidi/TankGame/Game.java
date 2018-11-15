@@ -93,6 +93,7 @@ public class Game implements Runnable{
         to draw we have access to canvas object inside the display class
         since the canvas object is set to private we have to use its setters and getters
         Every time this render method runs we need to do the same thing over and over again
+        *****WE HAVE TO CLEAR THE SCREEN EVERY TIME WE RENDER******
      */
     private void render(){
         /*
@@ -117,15 +118,37 @@ public class Game implements Runnable{
             Therefore, we set our Graphics objects that we define as g by getting the getDrawGraphics of our BufferStrategy
          */
         g = bs.getDrawGraphics();
-        //DRAW HERE
+
+        /*
+            Every single time that the render runs, before drawing anything to the screen
+            we have to clear the screen.
+            clearRect() clears a rectangle portion of our screen within the JFrame
+            therefore we have to pass it width and height that it clears everything on our screen
+         */
+        g.clearRect(0, 0,  width, height);
+        //--------------DRAW HERE
         /*
             this method fill the rectangle inside our JFrame window
             this method takes 4 parameters:  x, y, width, height
             so, we should get a full rectangle filling out our JFrame window
          */
-        g.fillRect(0, 0, width, height);
+//        g.fillRect(0, 0, width, height);
 
-        //END DRAWING!
+        /*
+            we can change the Graphics color by the following method:
+            This line means that every thing I draw after this line of code should be that color that I set
+         */
+//        g.setColor(Color.red);
+        /*
+            To draw a rectangle in specific locations with specific size
+         */
+//        g.fillRect(10, 50, 50, 70);
+//        g.setColor(Color.BLUE);
+//        g.fillRect(0, 0, 10, 10);
+//        g.fillOval(60, 60, 100, 200);
+
+
+        //--------------END DRAWING!
         /*
             We have to actually tell java that we are done with our drawing
          */
