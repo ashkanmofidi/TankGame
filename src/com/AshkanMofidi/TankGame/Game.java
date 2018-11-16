@@ -102,7 +102,7 @@ public class Game implements Runnable{
             build path, all we have to do is putting a slash to access it "/"
         */
 //        testImage = ImageLoader.loadImage("/textures/Air.png");
-        testImg = ImageLoader.loadImage("/textures/sheet.png")
+        testImg = ImageLoader.loadImage("/textures/sheet.png");
     }
 
     /*
@@ -178,7 +178,8 @@ public class Game implements Runnable{
             the first parameter should be the image that we want to draw, in this case, the testImage, then
             it takes x & y coordinates and it takes a null as its last parameter (which is an image observer)
          */
-        g.drawImage(testImage, 20, 20, null);
+//        g.drawImage(testImage, 20, 20, null);
+
         //--------------END DRAWING!!!
         /*
             We have to actually tell java that we are done with our drawing
