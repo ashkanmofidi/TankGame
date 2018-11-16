@@ -1,8 +1,10 @@
 package com.AshkanMofidi.TankGame;
 import com.AshkanMofidi.TankGame.Display.Display;
+import com.AshkanMofidi.TankGame.gfx.ImageLoader;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
 
 /*
     The Game class is the main class of our game
@@ -60,6 +62,16 @@ public class Game implements Runnable{
     private BufferStrategy bs;
     private Graphics g;
 
+    /*
+        To just test my ImageLoader class, I create a BufferedImage object here
+     */
+//    private BufferedImage testImage;
+
+    /*
+        To load the sprite sheet containing game characters
+     */
+    private BufferedImage testImg;
+
     //We have ot initialize our display object in the Game constructor
     public Game(String title, int width, int height){
         this.width = width;
@@ -79,6 +91,18 @@ public class Game implements Runnable{
             Now we pass them into the display to create a new instance of it
          */
         display = new Display(title, width, height);
+
+        /*
+            To just test my ImageLoader class, I create a BufferedImage object here
+            So, since the loadImage() method inside the ImageLoader class is static
+            we can call it like ImageLoader.loadImage(); therefore we do not need
+            to create an object of ImageLoader and through that object get access to
+            the loadImage() function. Then we have to pass the path of our image into
+            the loadImage function. Since I already linked the resource folder to the java
+            build path, all we have to do is putting a slash to access it "/"
+        */
+//        testImage = ImageLoader.loadImage("/textures/Air.png");
+        testImg = ImageLoader.loadImage("/textures/sheet.png")
     }
 
     /*
@@ -148,6 +172,13 @@ public class Game implements Runnable{
 //        g.fillOval(60, 60, 100, 200);
 
 
+        /*
+            In this render loop how do I render the images? So, Graphics objects have
+            all the magical power to do that. So, we use g.drawImage(which takes at minimum 4 parameters)
+            the first parameter should be the image that we want to draw, in this case, the testImage, then
+            it takes x & y coordinates and it takes a null as its last parameter (which is an image observer)
+         */
+        g.drawImage(testImage, 20, 20, null);
         //--------------END DRAWING!!!
         /*
             We have to actually tell java that we are done with our drawing

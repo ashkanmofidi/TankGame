@@ -17,7 +17,7 @@ public class ImageLoader {
     public static BufferedImage loadImage(String path){
 
         /*
-            So lets return our BufferedImage or load an Image and then return it here
+            So lets return our BufferedImage object of our loaded Image
          */
         try {
             return ImageIO.read(ImageLoader.class.getResource(path));
