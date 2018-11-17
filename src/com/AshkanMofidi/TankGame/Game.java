@@ -1,5 +1,6 @@
 package com.AshkanMofidi.TankGame;
 import com.AshkanMofidi.TankGame.Display.Display;
+import com.AshkanMofidi.TankGame.gfx.Assets;
 import com.AshkanMofidi.TankGame.gfx.ImageLoader;
 import com.AshkanMofidi.TankGame.gfx.SpriteSheet;
 
@@ -71,8 +72,7 @@ public class Game implements Runnable{
     /*
         To load the sprite sheet containing game characters
      */
-    private BufferedImage testImg;
-    private SpriteSheet sheet;
+//
 
     //We have ot initialize our display object in the Game constructor
     public Game(String title, int width, int height){
@@ -104,8 +104,12 @@ public class Game implements Runnable{
             build path, all we have to do is putting a slash to access it "/"
         */
 //        testImage = ImageLoader.loadImage("/textures/Air.png");
-        testImg = ImageLoader.loadImage("/textures/sheet.png");
-        sheet = new SpriteSheet(testImg);
+
+//        testImg = ImageLoader.loadImage("/textures/sheet.png");
+//        sheet = new SpriteSheet(testImg);
+
+        //We initialize all of our assets
+        Assets.init();
     }
 
     /*
@@ -193,6 +197,14 @@ public class Game implements Runnable{
             use them multiple times throughout our game application
          */
 //        g.drawImage(sheet.crop(25, 5, 18, 18), 5, 5, null);
+        g.drawImage(Assets.banana, 5, 5, null);
+        g.drawImage(Assets.candyBar, 20, 20, null);
+        g.drawImage(Assets.blueKey, 50, 50, null);
+        g.drawImage(Assets.redApple, 20, 100, null);
+        g.drawImage(Assets.strawberry, 100, 180, null);
+
+
+
 
         //--------------END DRAWING!!!
         /*
