@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c01e0d7c-4f08-483c-bc23-fdb99e834c1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,24 +22,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="9" />
           <entry key="png" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15284" />
+          <entry key="java" value="17300" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15284" />
+          <entry key="JAVA" value="17300" />
         </counts>
       </usages-collector>
     </session>
@@ -71,10 +72,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+            <state relative-caret-position="348">
+              <caret line="194" column="8" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding>
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/com/AshkanMofidi/TankGame/gfx/ImageLoader.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/ImageLoader.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" />
       </list>
     </option>
@@ -189,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542412429395" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542416156427" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -239,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542066981324</updated>
-      <workItem from="1542066984370" duration="22587000" />
+      <workItem from="1542066984370" duration="24635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22587000" />
+    <option name="totallyTimeSpent" value="24635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -350,10 +367,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+        <state relative-caret-position="348">
+          <caret line="194" column="8" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

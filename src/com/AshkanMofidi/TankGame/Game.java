@@ -1,6 +1,7 @@
 package com.AshkanMofidi.TankGame;
 import com.AshkanMofidi.TankGame.Display.Display;
 import com.AshkanMofidi.TankGame.gfx.ImageLoader;
+import com.AshkanMofidi.TankGame.gfx.SpriteSheet;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -71,6 +72,7 @@ public class Game implements Runnable{
         To load the sprite sheet containing game characters
      */
     private BufferedImage testImg;
+    private SpriteSheet sheet;
 
     //We have ot initialize our display object in the Game constructor
     public Game(String title, int width, int height){
@@ -103,6 +105,7 @@ public class Game implements Runnable{
         */
 //        testImage = ImageLoader.loadImage("/textures/Air.png");
         testImg = ImageLoader.loadImage("/textures/sheet.png");
+        sheet = new SpriteSheet(testImg);
     }
 
     /*
@@ -118,6 +121,8 @@ public class Game implements Runnable{
         since the canvas object is set to private we have to use its setters and getters
         Every time this render method runs we need to do the same thing over and over again
         *****WE HAVE TO CLEAR THE SCREEN EVERY TIME WE RENDER******
+        *********All the code in this render method will be called many many times each second
+        * So we have to prevent any unnecessary repetitive steps for speed and game efficiency********
      */
     private void render(){
         /*
@@ -179,6 +184,15 @@ public class Game implements Runnable{
             it takes x & y coordinates and it takes a null as its last parameter (which is an image observer)
          */
 //        g.drawImage(testImage, 20, 20, null);
+        /*
+            I call the below crop method many many times per second
+            So, why should I crop the same character many many times per second?!
+            Good question, so I have to eliminate any unnecessary steps here to avoid them to be run repetitively
+            This elimination will increase the speeds and makes our game to run efficiently
+            Therefore, I'm going to create an assets class to crop and import game character only once but we still can
+            use them multiple times throughout our game application
+         */
+//        g.drawImage(sheet.crop(25, 5, 18, 18), 5, 5, null);
 
         //--------------END DRAWING!!!
         /*
