@@ -7,6 +7,7 @@ import com.AshkanMofidi.TankGame.gfx.SpriteSheet;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
+import java.util.concurrent.TimeUnit;
 
 /*
     The Game class is the main class of our game
@@ -27,6 +28,15 @@ import java.awt.image.BufferedImage;
 
 
 public class Game implements Runnable{
+    //++++++++
+    private void insertDelay(final int DELAY_TIME) {
+        try {
+            Thread.sleep(DELAY_TIME);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+    }
+    //+++++++++++
 
     /*
         We define the Game constructor here
@@ -197,11 +207,66 @@ public class Game implements Runnable{
             use them multiple times throughout our game application
          */
 //        g.drawImage(sheet.crop(25, 5, 18, 18), 5, 5, null);
-        g.drawImage(Assets.banana, 5, 5, null);
-        g.drawImage(Assets.candyBar, 20, 20, null);
-        g.drawImage(Assets.blueKey, 50, 50, null);
-        g.drawImage(Assets.redApple, 20, 100, null);
-        g.drawImage(Assets.strawberry, 100, 180, null);
+//        g.drawImage(Assets.banana, 5, 5, null);
+//        g.drawImage(Assets.candyBar, 20, 20, null);
+//        g.drawImage(Assets.blueKey, 50, 50, null);
+//        g.drawImage(Assets.redApple, 20, 100, null);
+//        g.drawImage(Assets.strawberry, 100, 180, null);
+
+        bs.show();
+//        insertDelay(50);
+//
+//        g.drawImage(Assets.explosion1, 0 ,0, null);
+//        insertDelay(100);
+//        bs.show();
+//        g.drawImage(Assets.explosion2, 30, 30, null);
+//        insertDelay(50);
+//        bs.show();
+//        g.drawImage(Assets.explosion3, 60, 60, null);
+//        insertDelay(50);
+//        bs.show();
+//
+//        g.drawImage(Assets.explosion4, 90, 90, null);
+//        insertDelay(50);
+//        bs.show();
+//
+//        g.drawImage(Assets.explosion5, 120, 120, null);
+//        insertDelay(50);
+
+        int y = 50;
+        for(int i = 0; i < 5; i++){
+            y+=10;
+            g.drawImage(Assets.explosions[i], 90, 90, null);
+            bs.show();
+            insertDelay(y);
+        }
+        g.clearRect(88, 88, 17, 17);
+        for(int i = 0; i < 5; i++){
+            y+=10;
+            g.drawImage(Assets.explosions[i], 93, 92, null);
+            bs.show();
+            insertDelay(y);
+        }
+        g.clearRect(93, 92, 17, 17);
+
+        for(int i = 0; i < 5; i++){
+            y+=10;
+            g.drawImage(Assets.explosions[i], 89, 90, null);
+            bs.show();
+            insertDelay(y);
+        }
+        g.clearRect(89, 91, 17, 17);
+
+        for(int i = 0; i < 5; i++){
+            y+=10;
+            g.drawImage(Assets.explosions[i], 92, 92, null);
+            bs.show();
+            insertDelay(y);
+        }
+
+
+
+
 
 
 
@@ -230,13 +295,20 @@ public class Game implements Runnable{
             which updates all variables, positions of objects, etc
             Draw (render) everything to the screen
          */
-        while(running){
+
+//        while(running){
+////            tick();
+////            render();
+////        }
+////
+////        //We call the stop method in case if the stop the thread if it hasn't already been stopped
+////        stop();
+
+        while(true){
             tick();
             render();
         }
 
-        //We call the stop method in case if the stop the thread if it hasn't already been stopped
-        stop();
 
     }
 
