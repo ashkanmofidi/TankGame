@@ -128,17 +128,17 @@ public class Game implements Runnable{
         WIDTH & HEIGHT are the size of each frame
      */
     public void expWithSmoke(Graphics g, BufferStrategy bs, int x, int y){
-        int timePerFrame = 100;
+        int timePerFrame = 30;
         final int WIDTH = 128;
         final int HEIGHT = 128;
         for(int i = 0; i < 11; i++){
-
             timePerFrame += 5;
             g.drawImage(Assets.expWithSmoke[i], x, y, null);
             bs.show();
             g.clearRect(x, y, 128, 128);
             insertDelay(timePerFrame);
         }
+
     }
 
 
@@ -149,21 +149,22 @@ public class Game implements Runnable{
         timePerFrame is the required time in millisecond that we want each sub image in the explosion.png to be shown
      */
     public void explWithoutSmoke(Graphics g, BufferStrategy bs, int x, int y) {
-        int timePerFrame = 100;
+        int timePerFrame = 6;
+        final int WIDTH = 16;
+        final int HEIGHT = 16;
         for (int i = 0; i < 5; i++) {
-            timePerFrame += 10;
-            g.drawImage(Assets.explosions[i], 90, 90, null);
+            timePerFrame += 30;
+            g.drawImage(Assets.explosions[i], x, y, null);
             bs.show();
             insertDelay(timePerFrame);
-
-            g.clearRect(93, 92, 17, 17);
+            g.clearRect(x, y, WIDTH, HEIGHT);
         }
+        g.dispose();
     }
     /*
         this tick methods updates all variables
      */
         private void tick () {
-
         }
 
     /*
@@ -287,7 +288,11 @@ public class Game implements Runnable{
 //        }
 
 
+
+//            explWithoutSmoke(g, bs, 0, 0);
             expWithSmoke(g, bs, 0, 0);
+            g.clearRect(0, 0, width, height);
+
 
 
             //--------------END DRAWING!!!

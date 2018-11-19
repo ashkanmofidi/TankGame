@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01e0d7c-4f08-483c-bc23-fdb99e834c1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/gfx/Assets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,12 +33,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="22369" />
+          <entry key="java" value="22562" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22369" />
+          <entry key="JAVA" value="22562" />
         </counts>
       </usages-collector>
     </session>
@@ -75,10 +71,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
+            <state relative-caret-position="184">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6415#6416#0" expanded="true" />
+                <element signature="e#6456#6457#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="462">
               <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/ImageLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="360">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -222,7 +220,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542603265584" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542608462589" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -272,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542066981324</updated>
-      <workItem from="1542066984370" duration="39166000" />
+      <workItem from="1542066984370" duration="43631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39166000" />
+    <option name="totallyTimeSpent" value="43631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -368,18 +366,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="360">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Launcher.java">
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state relative-caret-position="462">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -396,22 +397,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java">
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
+        <state relative-caret-position="184">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6415#6416#0" expanded="true" />
+            <element signature="e#6456#6457#0" expanded="true" />
           </folding>
         </state>
       </provider>
