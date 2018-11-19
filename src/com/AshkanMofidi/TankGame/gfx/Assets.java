@@ -1,6 +1,7 @@
 package com.AshkanMofidi.TankGame.gfx;
 
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 /*
     I created this class that I prevent any unnecessary code repetition
@@ -17,8 +18,17 @@ public class Assets {
 
     public static BufferedImage explosion1, explosion2, explosion3, explosion4, explosion5;
 
+    public static BufferedImage[] expWithSmoke;
+
+
     public static BufferedImage[] explosions;
 
+    //These are the width and height of each photos inside SpriteSheet sheetExplosionWithSpoke
+    private static final int WIDTHOFEXPWITHSMOKE = 128;
+    private static final int HEIGHTOFEXPWITHSMOKE = 127;
+
+    //This is the distance along the x which set to be the beginning borderline of each photo inside our split sheet
+    private static int xForEachImg = 0;
 
     /*
         Instead of hardcoding all the numbers in for cropping, I'm going to define variables to be more clear
@@ -54,6 +64,14 @@ public class Assets {
         explosion4 = sheetOfExplosions.crop(47, 0, 17, 15);
         explosion5 = sheetOfExplosions.crop(64, 0, 16, 15);
         explosions = new BufferedImage[]{explosion1, explosion2, explosion3, explosion4, explosion5};
+
+        SpriteSheet sheetExplosionWithSpoke = new SpriteSheet(ImageLoader.loadImage("/textures/explosion4.png"));
+        expWithSmoke = new BufferedImage[12];
+        for(int i = 0; i < 11; i++){
+            expWithSmoke[i] = sheetExplosionWithSpoke.crop(xForEachImg, 0, WIDTHOFEXPWITHSMOKE, HEIGHTOFEXPWITHSMOKE);
+            xForEachImg += WIDTHOFEXPWITHSMOKE;
+        }
+
 
 
     }

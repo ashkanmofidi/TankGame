@@ -123,11 +123,48 @@ public class Game implements Runnable{
     }
 
     /*
+        calling this function will simulate the fire in respect to explosion4.png image
+        x & y are the coordinates of the place that we want to place the fire
+        WIDTH & HEIGHT are the size of each frame
+     */
+    public void expWithSmoke(Graphics g, BufferStrategy bs, int x, int y){
+        int timePerFrame = 100;
+        final int WIDTH = 128;
+        final int HEIGHT = 128;
+        for(int i = 0; i < 11; i++){
+
+            timePerFrame += 5;
+            g.drawImage(Assets.expWithSmoke[i], x, y, null);
+            bs.show();
+            g.clearRect(x, y, 128, 128);
+            insertDelay(timePerFrame);
+        }
+    }
+
+
+    /*
+        calling this function will simulate the fire without any smoke in respect to explosion.png image
+        x & y are the coordinates of the place that we want to place the fire
+        WIDTH & HEIGHT are the size of each frame
+        timePerFrame is the required time in millisecond that we want each sub image in the explosion.png to be shown
+     */
+    public void explWithoutSmoke(Graphics g, BufferStrategy bs, int x, int y) {
+        int timePerFrame = 100;
+        for (int i = 0; i < 5; i++) {
+            timePerFrame += 10;
+            g.drawImage(Assets.explosions[i], 90, 90, null);
+            bs.show();
+            insertDelay(timePerFrame);
+
+            g.clearRect(93, 92, 17, 17);
+        }
+    }
+    /*
         this tick methods updates all variables
      */
-    private void tick(){
+        private void tick () {
 
-    }
+        }
 
     /*
         This render method draw our game for us
@@ -138,29 +175,29 @@ public class Game implements Runnable{
         *********All the code in this render method will be called many many times each second
         * So we have to prevent any unnecessary repetitive steps for speed and game efficiency********
      */
-    private void render(){
+        private void render () {
         /*
             We need to initialize the above defined BufferStrategy object into the BufferStrategy of our display canvas
             BufferStrategy gets how many buffers that the canvas uses
          */
 
-        bs = display.getCanvas().getBufferStrategy();
+            bs = display.getCanvas().getBufferStrategy();
         /*
             if this is the first time running our game, our BufferStrategy or canvas doesn't have any BufferStrategy, so it has no clue how many
             buffer to use
             So, we create a buffer strategy for our canvas if it doesn't have one yet
             createBufferStrategy(TAKES THE NUMBER OF BUFFERS IT USE)
          */
-        if(bs == null){
-            display.getCanvas().createBufferStrategy(3);
-            return;
-        }
+            if (bs == null) {
+                display.getCanvas().createBufferStrategy(3);
+                return;
+            }
         /*
             Now that I can sure that our BufferStrategy has been set, we can begin drawing
             So, to draw into the canvas we are going to use our Graphics variable as something like a paintbrush
             Therefore, we set our Graphics objects that we define as g by getting the getDrawGraphics of our BufferStrategy
          */
-        g = bs.getDrawGraphics();
+            g = bs.getDrawGraphics();
 
         /*
             Every single time that the render runs, before drawing anything to the screen
@@ -168,8 +205,8 @@ public class Game implements Runnable{
             clearRect() clears a rectangle portion of our screen within the JFrame
             therefore we have to pass it width and height that it clears everything on our screen
          */
-        g.clearRect(0, 0,  width, height);
-        //--------------DRAW HERE
+            g.clearRect(0, 0, width, height);
+            //--------------DRAW HERE
         /*
             this method fill the rectangle inside our JFrame window
             this method takes 4 parameters:  x, y, width, height
@@ -213,7 +250,7 @@ public class Game implements Runnable{
 //        g.drawImage(Assets.redApple, 20, 100, null);
 //        g.drawImage(Assets.strawberry, 100, 180, null);
 
-        bs.show();
+            bs.show();
 //        insertDelay(50);
 //
 //        g.drawImage(Assets.explosion1, 0 ,0, null);
@@ -233,84 +270,61 @@ public class Game implements Runnable{
 //        g.drawImage(Assets.explosion5, 120, 120, null);
 //        insertDelay(50);
 
-        int y = 50;
-        for(int i = 0; i < 5; i++){
-            y+=10;
-            g.drawImage(Assets.explosions[i], 90, 90, null);
-            bs.show();
-            insertDelay(y);
-        }
-        g.clearRect(88, 88, 17, 17);
-        for(int i = 0; i < 5; i++){
-            y+=10;
-            g.drawImage(Assets.explosions[i], 93, 92, null);
-            bs.show();
-            insertDelay(y);
-        }
-        g.clearRect(93, 92, 17, 17);
 
-        for(int i = 0; i < 5; i++){
-            y+=10;
-            g.drawImage(Assets.explosions[i], 89, 90, null);
-            bs.show();
-            insertDelay(y);
-        }
-        g.clearRect(89, 91, 17, 17);
-
-        for(int i = 0; i < 5; i++){
-            y+=10;
-            g.drawImage(Assets.explosions[i], 92, 92, null);
-            bs.show();
-            insertDelay(y);
-        }
+//        for(int i = 0; i < 5; i++){
+//            y+=10;
+//            g.drawImage(Assets.explosions[i], 89, 90, null);
+//            bs.show();
+//            insertDelay(y);
+//        }
+//        g.clearRect(89, 91, 17, 17);
+//
+//        for(int i = 0; i < 5; i++){
+//            y+=10;
+//            g.drawImage(Assets.explosions[i], 92, 92, null);
+//            bs.show();
+//            insertDelay(y);
+//        }
 
 
+            expWithSmoke(g, bs, 0, 0);
 
 
-
-
-
-
-        //--------------END DRAWING!!!
+            //--------------END DRAWING!!!
         /*
             We have to actually tell java that we are done with our drawing
          */
-        bs.show();
-        g.dispose();
-    }
+            bs.show();
+            g.dispose();
+        }
 
     /*
         a majority of our Game code goes inside this run method
         the first thing we do in the run method is calling a init() method
         which I define above
      */
-    @Override
-    public void run() {
+        @Override
+        public void run () {
         /*
             The first thing that we do in our run method is initializing the above init() method
          */
-        init();
+            init();
         /*
             Then we want to run the game loop of our game
             which updates all variables, positions of objects, etc
             Draw (render) everything to the screen
          */
 
-//        while(running){
-////            tick();
-////            render();
-////        }
-////
+            while (running) {
+                tick();
+                render();
+            }
+
 ////        //We call the stop method in case if the stop the thread if it hasn't already been stopped
 ////        stop();
 
-        while(true){
-            tick();
-            render();
+
         }
-
-
-    }
 
 
     /*
@@ -320,7 +334,7 @@ public class Game implements Runnable{
         In conclusion, whenever we call our start method, we initialize our thread to a new thread
         and then we take this class to run on that new thread
      */
-    public synchronized void start(){
+        public synchronized void start () {
         /*
             we initially set the running to false
             so we need to somewhere set it to true
@@ -330,38 +344,40 @@ public class Game implements Runnable{
             since it reinitialize a new thread
             so, we need to check whether the game is running or not before starting the thread
          */
-        if(running)
-            return;// and don't do the rest of these codes
-        running = true;
+            if (running)
+                return;// and don't do the rest of these codes
+            running = true;
 
         /*
             we want to use the thread to run this current class
             Because this class implements the Runnable it allows us to pass this into the Thread argument
          */
-        thread = new Thread(this);
+            thread = new Thread(this);
         /*
             and now we have to start the thread
             This start method actually calls the above run method
             thread.start() actually calls the above run method
          */
-        thread.start();
+            thread.start();
 
-    }
+        }
 
-    public synchronized void stop(){
+        public synchronized void stop () {
         /*
             We need to make sure whether the game hasn't been stopped yet
             because if we re stop the game then it would cause a bunch of errors
          */
-        if(!running)
-            return;// and don't do the rest of these codes
-        running = false;
-        try {
-            //To close our thread safely we use the thread.join()
-            thread.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+            if (!running)
+                return;// and don't do the rest of these codes
+            running = false;
+            try {
+                //To close our thread safely we use the thread.join()
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
+        }
     }
-}
+
+
