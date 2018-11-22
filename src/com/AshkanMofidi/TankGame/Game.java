@@ -128,17 +128,16 @@ public class Game implements Runnable{
         WIDTH & HEIGHT are the size of each frame
      */
     public void expWithSmoke(Graphics g, BufferStrategy bs, int x, int y){
-        int timePerFrame = 30;
+        int timePerFrame = 10;
         final int WIDTH = 128;
         final int HEIGHT = 128;
         for(int i = 0; i < 11; i++){
-            timePerFrame += 5;
+            timePerFrame += 20;
             g.drawImage(Assets.expWithSmoke[i], x, y, null);
             bs.show();
-            g.clearRect(x, y, 128, 128);
+            g.clearRect(x, y, WIDTH, HEIGHT);
             insertDelay(timePerFrame);
         }
-
     }
 
 
@@ -159,12 +158,24 @@ public class Game implements Runnable{
             insertDelay(timePerFrame);
             g.clearRect(x, y, WIDTH, HEIGHT);
         }
-        g.dispose();
     }
+
+    /*
+        I created this x variable that my game runs perfectly on every different computers
+        ****I WANT MY GAME TO RUN AT THE SAME SPEED ON ANY COMPUTER NO MATTER IF THE COMPUTER IS FAST OR SLOW*****
+     */
+    int x = 0;
+
     /*
         this tick methods updates all variables
+        This method will be called many many times every single seconds!
      */
         private void tick () {
+            /*
+                If our x variable is increasing here, therefore if we put it in our drawImage function then that image will move
+                Therefore the Image will run from left to right on our screen!
+             */
+            x += 1;
         }
 
     /*
@@ -290,8 +301,24 @@ public class Game implements Runnable{
 
 
 //            explWithoutSmoke(g, bs, 0, 0);
-            expWithSmoke(g, bs, 0, 0);
-            g.clearRect(0, 0, width, height);
+//            explWithoutSmoke(g, bs, 25, 30);
+
+            g.drawImage(Assets.tank, x, 30, null);
+//            expWithSmoke(g, bs, x, 30);
+//
+//
+//            expWithSmoke(g, bs, 20, 150);
+//
+//
+//            explWithoutSmoke(g, bs, 150, 30);
+//
+//            explWithoutSmoke(g, bs, 20, 130);
+//            explWithoutSmoke(g, bs, 30, 25);
+//
+//            expWithSmoke(g, bs, 20, 10);
+//            expWithSmoke(g, bs, 150, 10);
+//            expWithSmoke(g, bs, 20, 100);
+//            expWithSmoke(g, bs, 300, 30);
 
 
 
@@ -318,12 +345,52 @@ public class Game implements Runnable{
             Then we want to run the game loop of our game
             which updates all variables, positions of objects, etc
             Draw (render) everything to the screen
+            -------------------------------------------------------------------------------
+            I created this x variable that my game runs perfectly on every different computers
+            ****I WANT MY GAME TO RUN AT THE SAME SPEED ON ANY COMPUTER NO MATTER IF THE COMPUTER IS FAST OR SLOW*****
+            * Therefore, I'm going to limit how many times the tick() and render() method inside the run() method run in every single second!
+            * I'm going to define an int variable calling it fps (frames or ticks / second) and set it to 60 which means how many times in every
+            * second we want our tick() and render() method to run
+            * Then, I will define a double variable calling it timePerTick and will set it to 1 billion; why? Because, there are 1 billion nano seconds in one second
+            * Because, usually when we do computer stuff, we measure time in nano seconds rather than in seconds, because it is much much more specific
+            -------------------------------------------------------------------------------
          */
+        //fps = frame per second
+        int fps = 60;
+        //The number of nano seconds per second which is 1 billion
+        final int NANOINSECOND = 1000000000;
+        //timePerTick in nano second
+        double timePerTick = NANOINSECOND / fps;
+        double delta = 0;
+        long now;
+        //System.nanoTime() returns the current time of our computer but in nano seconds
+        long lastTime = System.nanoTime();
 
             while (running) {
-                tick();
-                render();
+                //We set the now variable to the current time of our computer
+                now = System.nanoTime();
+                /*
+                    (now - lastTime) is the time past between last time we call this line of code
+                    This delta variable basically tells our computer when and when not call these tick() and render() functions
+                    The data variable will be added by at the top of our game loop
+                 */
+                delta += (now - lastTime) / timePerTick;
+                lastTime = now;
+
+                /*
+                    Now we have to check if we should call these tick() and render() methods
+                    So, if delta is equal or larger than 1 we know that we have to run tick() and render() methods to reach our 60 frame per seconds
+                 */
+                if(delta >= 1){
+                    tick();
+                    render();
+                    //We tick() and render() one time, now we have to take 1 out of our delta
+                    delta--;
+                }
+
             }
+
+
 
 ////        //We call the stop method in case if the stop the thread if it hasn't already been stopped
 ////        stop();
