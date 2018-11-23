@@ -201,7 +201,7 @@ public class Game implements Runnable{
             createBufferStrategy(TAKES THE NUMBER OF BUFFERS IT USE)
          */
             if (bs == null) {
-                display.getCanvas().createBufferStrategy(3);
+                display.getCanvas().createBufferStrategy(4);
                 return;
             }
         /*
@@ -365,6 +365,8 @@ public class Game implements Runnable{
         long now;
         //System.nanoTime() returns the current time of our computer but in nano seconds
         long lastTime = System.nanoTime();
+        long timer = 0;
+        int ticks = 0;
 
             while (running) {
                 //We set the now variable to the current time of our computer
@@ -375,6 +377,10 @@ public class Game implements Runnable{
                     The data variable will be added by at the top of our game loop
                  */
                 delta += (now - lastTime) / timePerTick;
+                /*
+                    Timer indicates the amount of time passed since we call this piece of the code.
+                 */
+                timer += now - lastTime;
                 lastTime = now;
 
                 /*
@@ -384,8 +390,20 @@ public class Game implements Runnable{
                 if(delta >= 1){
                     tick();
                     render();
+                    //We want to increment the tick method by one each time we run this code
+                    ticks++;
                     //We tick() and render() one time, now we have to take 1 out of our delta
                     delta--;
+                }
+
+                /*
+                    NANOINSECOND = 1 second
+                    This block of if code will visualize for us how many frames we are running our game in
+                 */
+                if(timer >= NANOINSECOND){
+                    System.out.println("Ticks and Frames: " + ticks);
+                    ticks = 0;
+                    timer = 0;
                 }
 
             }
