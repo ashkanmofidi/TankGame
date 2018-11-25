@@ -1,6 +1,8 @@
 package com.AshkanMofidi.TankGame.states;
 
 
+import com.AshkanMofidi.TankGame.Game;
+
 import java.awt.Graphics;
 
 /*
@@ -13,6 +15,18 @@ import java.awt.Graphics;
 public abstract class State {
 
 
+    /*
+        I gonna declare the Game object in every single of my State classes
+     */
+    protected Game game;
+
+
+    /*
+        Then, I'm going to define a constructor for my State class and pass the a game object as its argument
+     */
+    public State(Game game){
+        this.game = game;
+    }
     /*
         We put all the things that are common between every single states
         Therefore, every single states must have all the functions of this class

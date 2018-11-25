@@ -89,6 +89,7 @@ public class Display {
         canvas.setPreferredSize(new Dimension(width, height));
         canvas.setMaximumSize(new Dimension(width, height));
         canvas.setMinimumSize(new Dimension(width, height));
+        canvas.setFocusable(false);
 
         //We have to add our initialized canvas into our JFrame window so we can be able to see it
         frame.add(canvas);
@@ -102,6 +103,13 @@ public class Display {
          */
     public Canvas getCanvas(){
         return canvas;
+    }
+
+    /*
+        I need to get access to the this JFrame object outside of this class for using our keyboard inputs
+     */
+    public JFrame getFrame(){
+        return frame;
     }
 
 

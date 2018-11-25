@@ -1,11 +1,13 @@
 package com.AshkanMofidi.TankGame.states;
 
+import com.AshkanMofidi.TankGame.Game;
+
 import java.awt.*;
 
 public class GameOverState extends State {
 
-    public GameOverState(){
-
+    public GameOverState(Game game){
+        super(game);
     }
 
 

@@ -20,7 +20,8 @@ public class Assets {
 
     public static BufferedImage[] expWithSmoke;
 
-    public static BufferedImage tank;
+    public static BufferedImage tankRed;
+
 
 
     public static BufferedImage[] explosions;
@@ -43,7 +44,7 @@ public class Assets {
      */
     public static void init(){
 
-        tank = ImageLoader.loadImage("/textures/tank.png");
+        tankRed = ImageLoader.loadImage("/textures/tank.png");
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/sheet.png"));
 
         redApple = sheet.crop(outerMargin, outerMargin, width, height);

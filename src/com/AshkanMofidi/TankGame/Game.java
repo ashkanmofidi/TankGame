@@ -1,6 +1,7 @@
 package com.AshkanMofidi.TankGame;
 import com.AshkanMofidi.TankGame.Display.Display;
 import com.AshkanMofidi.TankGame.gfx.Assets;
+import com.AshkanMofidi.TankGame.input.KeyManager;
 import com.AshkanMofidi.TankGame.states.*;
 import com.AshkanMofidi.TankGame.gfx.ImageLoader;
 import com.AshkanMofidi.TankGame.gfx.SpriteSheet;
@@ -79,12 +80,20 @@ public class Game implements Runnable{
         SINCE THIS GAME CLASS IS OUR MAIN CLASS, WE GONNA DECLARE EVERY SINGLE STATE THAT WE HAVE IN THIS GAME PROGRAM
         We have to declare a gameState object that we can set the state of out game program
         we initialize this object inside our init() method
+        STATES
      */
     private State gameState;
     private State menuState;
     private State settingState;
     private State gameWinState;
     private State gameOverState;
+
+    /*
+        INPUTS
+        We initialize it inside our Game constructor
+        Then, we pass it as an argument to the addKeyListener inside our init() method
+     */
+    private KeyManager keyManager;
 
     /*
         To just test my ImageLoader class, I create a BufferedImage object here
@@ -101,6 +110,7 @@ public class Game implements Runnable{
         this.width = width;
         this.height = height;
         this.title = title;
+        keyManager = new KeyManager();
     }
 
 
@@ -130,6 +140,15 @@ public class Game implements Runnable{
 //        testImg = ImageLoader.loadImage("/textures/sheet.png");
 //        sheet = new SpriteSheet(testImg);
 
+        /*
+            Now, I need to get the JFrame and then add a key listener on it so it can listen to the inserted key on our keyboard
+            Which takes a parameter of a KeyListener since our class calls KeyManager and KeyManager implements the KeyListener
+            To do that we need to create an object of our KeyManager class at the top of this class
+            Long story short, what we are doing here is that after creating a display (above) then we get its JFrame of our actual display window(down)
+            and then we are adding a key listener; this allows us to access the keyboard and then we pass it a keyManager object that we created on top of this class
+            and initialized it inside the class constructor. We are able to do that since our KeyManager class implements the KeyListener Interface/ Class
+         */
+        display.getFrame().addKeyListener(keyManager);
         //We initialize all of our assets
         Assets.init();
 
@@ -137,12 +156,15 @@ public class Game implements Runnable{
             SINCE THIS GAME CLASS IS OUR MAIN CLASS, WE GONNA INITIALIZE EVERY SINGLE STATE THAT WE HAVE IN OUR GAME PROGRAM
             We have initialized the State of our game here
             Because our GmaeState class extends the State class we can initialize the State object to the GameState
+            ---------
+            Since, we are in the Game class itself and since the argument for their game state constructors should we game, in this case we just pass
+            this to their constructors since we are in the game class itself
          */
-        gameState = new GameState();
-        menuState = new MenuState();
-        settingState = new SettingState();
-        gameWinState = new GameWinState();
-        gameOverState = new GameOverState();
+        gameState = new GameState(this);
+        menuState = new MenuState(this);
+        settingState = new SettingState(this);
+        gameWinState = new GameWinState(this);
+        gameOverState = new GameOverState(this);
 
         /*
             This create the current state of our game that we want to tick and render to
