@@ -12,20 +12,7 @@ import java.awt.Graphics;
  */
 public abstract class State {
 
-    /*
-        We right GameState manager code here
-        GameState manager code is a code that we right to tell in which state we are in
-        We create a State object and we call it a current state
-        This currentState object is going to hold what State we currently want to tick and render in our game
-     */
-    private static State currentState = null;
 
-    /*
-        Now we need a method that we can set this currentState object
-     */
-    public void setCurrentState(State currentState){
-         this.currentState = currentState;
-    }
     /*
         We put all the things that are common between every single states
         Therefore, every single states must have all the functions of this class

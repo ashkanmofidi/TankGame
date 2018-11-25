@@ -1,5 +1,7 @@
 package com.AshkanMofidi.TankGame.states;
 
+import com.AshkanMofidi.TankGame.gfx.Assets;
+
 import java.awt.*;
 
 /*
@@ -22,6 +24,6 @@ public class GameState extends State {
 
     @Override
     public void render(Graphics g) {
-
+        g.drawImage(Assets.banana, 0, 0, null);
     }
 }

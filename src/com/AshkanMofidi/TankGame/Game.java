@@ -1,6 +1,7 @@
 package com.AshkanMofidi.TankGame;
 import com.AshkanMofidi.TankGame.Display.Display;
 import com.AshkanMofidi.TankGame.gfx.Assets;
+import com.AshkanMofidi.TankGame.states.*;
 import com.AshkanMofidi.TankGame.gfx.ImageLoader;
 import com.AshkanMofidi.TankGame.gfx.SpriteSheet;
 
@@ -75,6 +76,17 @@ public class Game implements Runnable{
     private Graphics g;
 
     /*
+        SINCE THIS GAME CLASS IS OUR MAIN CLASS, WE GONNA DECLARE EVERY SINGLE STATE THAT WE HAVE IN THIS GAME PROGRAM
+        We have to declare a gameState object that we can set the state of out game program
+        we initialize this object inside our init() method
+     */
+    private State gameState;
+    private State menuState;
+    private State settingState;
+    private State gameWinState;
+    private State gameOverState;
+
+    /*
         To just test my ImageLoader class, I create a BufferedImage object here
      */
 //    private BufferedImage testImage;
@@ -120,6 +132,23 @@ public class Game implements Runnable{
 
         //We initialize all of our assets
         Assets.init();
+
+        /*
+            SINCE THIS GAME CLASS IS OUR MAIN CLASS, WE GONNA INITIALIZE EVERY SINGLE STATE THAT WE HAVE IN OUR GAME PROGRAM
+            We have initialized the State of our game here
+            Because our GmaeState class extends the State class we can initialize the State object to the GameState
+         */
+        gameState = new GameState();
+        menuState = new MenuState();
+        settingState = new SettingState();
+        gameWinState = new GameWinState();
+        gameOverState = new GameOverState();
+
+        /*
+            This create the current state of our game that we want to tick and render to
+            for now -----ONLY----WE HAVE TO MAKE SURE WE SET OUR STATE ONLY TO GAMESTATE since we gonna write code only for this state for a while
+         */
+        StateManager.setState(gameState);
     }
 
     /*
@@ -160,11 +189,6 @@ public class Game implements Runnable{
         }
     }
 
-    /*
-        I created this x variable that my game runs perfectly on every different computers
-        ****I WANT MY GAME TO RUN AT THE SAME SPEED ON ANY COMPUTER NO MATTER IF THE COMPUTER IS FAST OR SLOW*****
-     */
-    int x = 0;
 
     /*
         this tick methods updates all variables
@@ -172,10 +196,11 @@ public class Game implements Runnable{
      */
         private void tick () {
             /*
-                If our x variable is increasing here, therefore if we put it in our drawImage function then that image will move
-                Therefore the Image will run from left to right on our screen!
+                if the State exist then tick()
              */
-            x += 1;
+            if(StateManager.getState() != null){
+                StateManager.getState().tick();
+            }
         }
 
     /*
@@ -219,6 +244,14 @@ public class Game implements Runnable{
          */
             g.clearRect(0, 0, width, height);
             //--------------DRAW HERE
+
+            /*
+                This if state is really important because if our gameState.getState() ever equals null, it through error
+                Basically, if the State exist then render()
+             */
+            if(StateManager.getState() != null){
+                StateManager.getState().render(g);
+            }
         /*
             this method fill the rectangle inside our JFrame window
             this method takes 4 parameters:  x, y, width, height
@@ -303,7 +336,7 @@ public class Game implements Runnable{
 //            explWithoutSmoke(g, bs, 0, 0);
 //            explWithoutSmoke(g, bs, 25, 30);
 
-            g.drawImage(Assets.tank, x, 30, null);
+//            g.drawImage(Assets.tank, x, 30, null);
 //            expWithSmoke(g, bs, x, 30);
 //
 //
