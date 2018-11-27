@@ -1,5 +1,6 @@
 package com.AshkanMofidi.TankGame.gfx;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
@@ -38,6 +39,7 @@ public class Assets {
     public static void init(){
 
         tankRed = ImageLoader.loadImage("/textures/tank.png");
+
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/sheet.png"));
 
         redApple = sheet.crop(outerMargin, outerMargin, width, height);
@@ -68,6 +70,9 @@ public class Assets {
             xForEachImg += WIDTHOFEXPWITHSMOKE;
         }
 
-        bullet = expWithSmoke[1];
+        bullet = sheetOfExplosions.crop(6, 5,5,5);
+
+//        bullet = expWithSmoke[0];
+
     }
 }

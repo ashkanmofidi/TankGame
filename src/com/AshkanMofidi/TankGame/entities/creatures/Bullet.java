@@ -7,7 +7,9 @@ import java.awt.*;
 import java.awt.geom.AffineTransform;
 
 public class Bullet extends Creature {
-    private double  rad, speed, dx, dy;
+    //Speed factor
+    private int dec = 2;
+    private double  rad, speed = 10, dx, dy;
     private int r;
     private Color color1;
     private Player player;
@@ -18,12 +20,13 @@ public class Bullet extends Creature {
     public Bullet(float x, float y, double angle){
         super(x, y);
         //Radiuse of the bullet
-        r = 3;
+        r = 5;
         this.angle = (float) angle;
         rad = Math.toRadians(this.angle);
-        speed = 15;
+        speed += dec;
         dx = Math.cos(rad) * speed;
         dy = Math.sin(rad) * speed;
+
         color1 = Color.RED;
 
 
@@ -43,18 +46,19 @@ public class Bullet extends Creature {
         return false;
     }
 
-    public void render(Graphics g) {
-            g.setColor(color1);
-            g.fillOval((int) ((x - r) + 25), (int) ((y - r) +25),  r, r);
-            System.out.println("YAyyyy");
-    }
+//    public void render(Graphics g) {
+//            g.setColor(color1);
+//            g.fillOval((int) ((x - r) + 25), (int) ((y - r) +25),  r, r);
+//            System.out.println("YAyyyy");
+//    }
 
-//    public void render(Graphics g) throws Exception{
-//        AffineTransform rotation = AffineTransform.getTranslateInstance(x, y);
+    public void render(Graphics g) throws Exception{
+//        AffineTransform rotation = AffineTransform.getTranslateInstance(((x - r) + 25), ((y - r) +25));
 //        rotation.rotate(rad, Assets.bullet.getWidth() / 2.0, Assets.bullet.getHeight() / 2.0);
 //
 //        Graphics2D g2d = (Graphics2D) g;
 //        g2d.drawImage(Assets.bullet, rotation, null);
-//    }
+        g.drawImage(Assets.bullet,(int) ((x - 2.5) +25), (int) ((y - 2.5) +25), null);
+    }
 
 }
