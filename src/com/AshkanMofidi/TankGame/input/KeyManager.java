@@ -34,7 +34,16 @@ public class KeyManager implements KeyListener {
     public KeyManager(){
         keys = new boolean[256];
 
-        /*
+
+    }
+
+    /*
+        In order for this class to be completely reliable, we are going to define a tick() function here so the values can get updated live
+        This tick() method is just like the ones in our GameState or Player class
+        We are going to call it constantly many times a second to move do the keyboard actions on time
+     */
+    public void tick(){
+                /*
             We have to get the code for up arrow key of the keyboard
             In order to get the code associated with certain keys, we should use KeyEvent. and then we can see the list of all the codes for different keys
             Any keys start with VK and then underscore VK_(the name of the code)
@@ -46,17 +55,6 @@ public class KeyManager implements KeyListener {
         space = keys[KeyEvent.VK_SPACE];
         enter = keys[KeyEvent.VK_ENTER];
         esc = keys[KeyEvent.VK_ESCAPE];
-    }
-
-    /*
-        In order for this class to be completely reliable, we are going to define a tick() function here so the values can get updated live
-        This tick() method is just like the ones in our GameState or Player class
-        We are going to call it constantly many times a second to move do the keyboard actions on time
-     */
-    public void tick(){
-        if(up){
-
-        }
     }
 
 

@@ -14,17 +14,10 @@ public class Assets {
     Now, we define variables to contain all the images that I want to use in my game
     I define them as public so that I can get access to them from anywhere
  */
-    public static BufferedImage redApple, greenApple, strawberry, toast, blueKey, greenKey, banana, candy, candyBar, goldKey, yellowKey, orangeKey;
+    public static BufferedImage redApple, greenApple, strawberry, toast, blueKey, greenKey, banana, candy, candyBar, goldKey, yellowKey, orangeKey,
+            explosion1, explosion2, explosion3, explosion4, explosion5, tankRed, bullet;
 
-    public static BufferedImage explosion1, explosion2, explosion3, explosion4, explosion5;
-
-    public static BufferedImage[] expWithSmoke;
-
-    public static BufferedImage tankRed;
-
-
-
-    public static BufferedImage[] explosions;
+    public static BufferedImage[] expWithSmoke, explosions;
 
     //These are the width and height of each photos inside SpriteSheet sheetExplosionWithSpoke
     private static final int WIDTHOFEXPWITHSMOKE = 128;
@@ -75,7 +68,6 @@ public class Assets {
             xForEachImg += WIDTHOFEXPWITHSMOKE;
         }
 
-
-
+        bullet = expWithSmoke[1];
     }
 }

@@ -14,7 +14,8 @@ public abstract  class Creature extends Entity {
         Now, I have to add all the things that are specified to the Creature class
         So, I'm going to add health variable since all creatures have their own health
      */
-    protected int helth;
+    protected int health;
+    protected float angle;
 
     /*
         Now, every creature have a x and y position on the screen
@@ -25,16 +26,16 @@ public abstract  class Creature extends Entity {
          */
         super(x, y);
         //I'm going to create methods to change this health value
-        helth = 10;
+        health = 10;
     }
 
     @Override
-    public void tick() {
-
+    public boolean tick() {
+        return false;
     }
 
     @Override
-    public void render(Graphics g) {
+    public void render(Graphics g) throws Exception {
 
     }
 }

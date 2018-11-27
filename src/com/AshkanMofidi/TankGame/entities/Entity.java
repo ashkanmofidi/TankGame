@@ -35,8 +35,8 @@ public abstract class Entity {
         render themselves into a screen
         In order for the render method to draw on the screen I need to pass a Graphics object to it, so that it can draw itself on the screen
      */
-    public abstract void tick();
+    public abstract boolean tick();
 
-    public abstract void render(Graphics g);
+    public abstract void render(Graphics g) throws Exception;
 
 }

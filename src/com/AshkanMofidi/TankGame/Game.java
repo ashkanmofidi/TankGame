@@ -49,7 +49,7 @@ public class Game implements Runnable{
     /*
         we also define two variables, width and height, so that our class can easily get access to them
      */
-    int width, height;
+    private int width, height;
     private String title;
 
     /*
@@ -111,6 +111,13 @@ public class Game implements Runnable{
         this.height = height;
         this.title = title;
         keyManager = new KeyManager();
+    }
+
+    public int getWidth(){
+        return width;
+    }
+    public int getHeight(){
+        return height;
     }
 
 
@@ -217,6 +224,8 @@ public class Game implements Runnable{
         This method will be called many many times every single seconds!
      */
         private void tick () {
+
+            keyManager.tick();
             /*
                 if the State exist then tick()
              */
@@ -234,7 +243,7 @@ public class Game implements Runnable{
         *********All the code in this render method will be called many many times each second
         * So we have to prevent any unnecessary repetitive steps for speed and game efficiency********
      */
-        private void render () {
+        private void render () throws Exception {
         /*
             We need to initialize the above defined BufferStrategy object into the BufferStrategy of our display canvas
             BufferStrategy gets how many buffers that the canvas uses
@@ -444,7 +453,11 @@ public class Game implements Runnable{
                  */
                 if(delta >= 1){
                     tick();
-                    render();
+                    try {
+                        render();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     //We want to increment the tick method by one each time we run this code
                     ticks++;
                     //We tick() and render() one time, now we have to take 1 out of our delta
@@ -465,10 +478,15 @@ public class Game implements Runnable{
 
 
 
-////        //We call the stop method in case if the stop the thread if it hasn't already been stopped
-////        stop();
+        //We call the stop method in case if the stop the thread if it hasn't already been stopped
+        stop();
 
 
+
+        }
+
+        public KeyManager getKeyManager(){
+            return keyManager;
         }
 
 

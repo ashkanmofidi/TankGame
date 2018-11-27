@@ -38,5 +38,5 @@ public abstract class State {
         Why we take a Graphics object g?! In our Game class we have a graphic objects which we called g, which was our magical game brush which allows us to draw on screen
         so, we have to pass the magical paint brush of our Game class to here, so that the state can be able to draw into screen directly
      */
-    public abstract void render(Graphics g);
+    public abstract void render(Graphics g) throws Exception;
 }
