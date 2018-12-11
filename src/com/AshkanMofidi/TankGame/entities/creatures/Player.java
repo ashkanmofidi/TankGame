@@ -19,7 +19,6 @@ public class Player extends Creature{
     /*
         our Player object needs to get a Game object since we want to get access to KeyManager inside the Game class
      */
-    private Game game;
     private boolean firing;
     private float vx;
     private float vy;
@@ -29,9 +28,9 @@ public class Player extends Creature{
     private double rad;
 
 
-    public Player(float x, float y, float vx, float vy, float angle, int shoot, Game game) {
+    public Player(Game game, float x, float y, int width, int height, float vx, float vy, float angle, int shoot) {
 
-        super(x, y);
+        super(game, x, y, width, height);
         this.vx = vx;
         this.vy = vy;
         this.shoot = shoot;
@@ -74,17 +73,13 @@ public class Player extends Creature{
         if(game.getKeyManager().space){
             setFiring(true);
         }
-//
-
-
         return true;
-
         }
-//
-//     private void shooting(){
-//        this.shoot += this.shoot;
-//
-//     }
+    private void getInput(){
+        xMove = 0;
+        yMove = 0;
+    }
+
 
     private void rotateLeft() {
         this.angle -= this.ROTATIONSPEED;
@@ -101,7 +96,8 @@ public class Player extends Creature{
                 x -= vx;
                 y -= vy;
 
-//        checkBorder();
+
+        checkBorder();
     }
 
     private void moveForwards() {
@@ -112,7 +108,7 @@ public class Player extends Creature{
 //        vy = (int) Math.round(R * Math.sin(Math.toRadians(angle)));
         x += (vx*2);
         y += (vy*2);
-//        checkBorder();
+        checkBorder();
     }
 
     //MYCODE-BEGIN
@@ -133,20 +129,20 @@ public class Player extends Creature{
 
 
 
-//    private void checkBorder() {
-//        if (x < 30) {
-//            x = 30;
-//        }
-//        if (x >= TRE.SCREEN_WIDTH - 88) {
-//            x = TRE.SCREEN_WIDTH - 88;
-//        }
-//        if (y < 40) {
-//            y = 40;
-//        }
-//        if (y >= TRE.SCREEN_HEIGHT - 80) {
-//            y = TRE.SCREEN_HEIGHT - 80;
-//        }
-//    }
+    private void checkBorder() {
+        if (x < 40) {
+            x = 40;
+        }
+        if (x >= game.getHeight() - 25) {
+            x = game.getWidth() - 25;
+        }
+        if (y < 10) {
+            y = 10;
+        }
+        if (y >= game.getWidth() - 33) {
+            y = game.getHeight() - 33;
+        }
+    }
 
     @Override
     public void render(Graphics g) throws Exception{
@@ -155,21 +151,6 @@ public class Player extends Creature{
 
         Graphics2D g2d = (Graphics2D) g;
         g2d.drawImage(Assets.tankRed, rotation, null);
-        }
 
-
-//    {
-//        /*
-//            Now, the Player needs to be drawn on the screen
-//            This is not a ideal way to do it, but it perfectly works best for me right now
-//            I use the position of the Entity class as it variables
-//            I should advise that x and y of the Entity class are floats; therefore to use them here I have to cast them into int
-////         */
-////        {
-////            ((Graphics2D) g).rotate(Math.toRadians(angle), x + 16, y + 16);
-////        }
-////        g.drawImage(Assets.tankRed, (int) x, (int) y, null);
-//
-//
-//    }
+    }
 }

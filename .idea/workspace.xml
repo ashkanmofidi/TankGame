@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c01e0d7c-4f08-483c-bc23-fdb99e834c1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/res/worlds/world1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Explosions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/GrassTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/SoilTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/StoneTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/WallTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/worlds/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/creatures/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/creatures/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/creatures/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/creatures/Creature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/entities/creatures/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/gfx/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TankGame/com/AshkanMofidi/TankGame/states/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,35 +38,40 @@
     <session id="-2122578888">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="47" />
-          <entry key="png" value="17" />
+          <entry key="java" value="93" />
+          <entry key="png" value="18" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="17" />
-          <entry key="JAVA" value="47" />
+          <entry key="Image" value="18" />
+          <entry key="JAVA" value="93" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="44300" />
+          <entry key="java" value="51186" />
+          <entry key="txt" value="148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="44300" />
+          <entry key="JAVA" value="51186" />
+          <entry key="PLAIN_TEXT" value="148" />
         </counts>
       </usages-collector>
     </session>
@@ -52,64 +79,75 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player.java">
+        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-610">
-              <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+            <state relative-caret-position="326">
+              <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3701#3702#0" expanded="true" />
-                <element signature="e#3727#3728#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Creature.java">
+        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/worlds/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1034#1035#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2060">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/input/KeyManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullet.java">
+        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="412">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2553#2554#0" expanded="true" />
+                <element signature="e#2579#2580#0" expanded="true" />
+                <element signature="e#2610#2611#0" expanded="true" />
+                <element signature="e#2636#2637#0" expanded="true" />
+                <element signature="e#2673#2674#0" expanded="true" />
+                <element signature="e#2707#2708#0" expanded="true" />
+                <element signature="e#2746#2747#0" expanded="true" />
+                <element signature="e#2782#2783#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/worlds/world1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/WallTile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+            <state relative-caret-position="457">
+              <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,25 +168,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/ImageLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="301">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/textures/explosion.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-596">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="-126">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,14 +190,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameOverState.java">
+        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="334">
+              <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,7 +238,6 @@
         <option value="$PROJECT_DIR$/src/Display/Display.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/com/AshkanMofidi/TankGame/gfx/ImageLoader.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/ImageLoader.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Launcher.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/StateManager.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Creature.java" />
@@ -204,17 +246,29 @@
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/MenuState.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameWinState.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameOverState.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Display/Display.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullets.java" />
         <option value="$USER_HOME$/Desktop/Bullet.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/input/KeyManager.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Creature.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameState.java" />
-        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player/Bullet.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Display/Display.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Explosions.java" />
         <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullet.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Creature.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/GrassTile.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/SoilTile.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/StoneTile.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/WallTile.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameState.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java" />
+        <option value="$PROJECT_DIR$/res/worlds/world1.txt" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/Tile.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/worlds/World.java" />
+        <option value="$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Entity.java" />
       </list>
     </option>
   </component>
@@ -224,10 +278,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="852" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="714" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -236,8 +289,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,6 +306,12 @@
               <item name="TankGame" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="textures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TankGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TankGame" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="worlds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TankGame" type="b2602c69:ProjectViewProjectNode" />
@@ -294,25 +351,41 @@
               <item name="TankGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="TankGame" type="462c0819:PsiDirectoryNode" />
-              <item name="input" type="462c0819:PsiDirectoryNode" />
+              <item name="states" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TankGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="TankGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="TankGame" type="462c0819:PsiDirectoryNode" />
-              <item name="states" type="462c0819:PsiDirectoryNode" />
+              <item name="tiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TankGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TankGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TankGame" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TankGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TankGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TankGame" type="462c0819:PsiDirectoryNode" />
+              <item name="worlds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543291016985" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544488268087" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -367,18 +440,19 @@
       <workItem from="1542838943451" duration="13723000" />
       <workItem from="1543035997924" duration="420000" />
       <workItem from="1543093919686" duration="40246000" />
-      <workItem from="1543265637490" duration="18434000" />
+      <workItem from="1543265637490" duration="31951000" />
+      <workItem from="1543882947566" duration="16727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118899000" />
+    <option name="totallyTimeSpent" value="149143000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1509299" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15379113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -388,7 +462,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4506024" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22771084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,37 +482,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12875536" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" weight="0.3297568" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29638556" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -464,66 +507,6 @@
     <entry file="file://$PROJECT_DIR$/res/textures/tank1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/SettingState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameWinState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="6" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/StateManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/MenuState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Display/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="91" column="35" lean-forward="true" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3716#3717#0" expanded="true" />
-            <element signature="e#3743#3744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/textures/Air.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -534,37 +517,70 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullets.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="35" selection-start-line="35" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#1074#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/textures/explosion4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/textures/explosion.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Explosions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Display/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="32" selection-end-line="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="78" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="57" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/input/KeyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="56" column="39" selection-end-line="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="24" column="109" selection-start-line="24" selection-start-column="109" selection-end-line="24" selection-end-column="109" />
+        <state relative-caret-position="330">
+          <caret line="24" column="109" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#846#847#0" expanded="true" />
@@ -575,8 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameOverState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="90">
+          <caret line="9" column="20" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#182#183#0" expanded="true" />
@@ -585,43 +601,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/input/KeyManager.java">
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameWinState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="75">
+          <caret line="7" column="4" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/MenuState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="20" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/SettingState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="20" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/textures/explosion.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/ImageLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="200">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/SpriteSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/StateManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="10" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2060">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="1734">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/GrassTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/StoneTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/SoilTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/WallTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/ImageLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/worlds/world1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/tiles/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/states/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-596">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="-126">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -630,44 +798,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3701#3702#0" expanded="true" />
-            <element signature="e#3727#3728#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/gfx/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+        <state relative-caret-position="334">
+          <caret line="136" column="17" lean-forward="true" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/creatures/Bullet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/worlds/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AshkanMofidi/TankGame/entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+            <element signature="e#2610#2611#0" expanded="true" />
+            <element signature="e#2636#2637#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
           </folding>
         </state>
       </provider>

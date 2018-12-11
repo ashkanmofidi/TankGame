@@ -9,7 +9,7 @@ import java.awt.geom.AffineTransform;
 public class Bullet extends Creature {
     //Speed factor
     private int dec = 2;
-    private double  rad, speed = 10, dx, dy;
+    private double  rad, speed = 15, dx, dy;
     private int r;
     private Color color1;
     private Player player;
@@ -17,13 +17,13 @@ public class Bullet extends Creature {
     private boolean show;
 
 
-    public Bullet(float x, float y, double angle){
-        super(x, y);
+    public Bullet(Game game, float x, float y, int width, int height, double angle){
+        super(game, x, y, width, height);
         //Radiuse of the bullet
         r = 5;
         this.angle = (float) angle;
         rad = Math.toRadians(this.angle);
-        speed += dec;
+        speed ++;
         dx = Math.cos(rad) * speed;
         dy = Math.sin(rad) * speed;
 

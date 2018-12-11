@@ -16,13 +16,13 @@ public class Assets {
     I define them as public so that I can get access to them from anywhere
  */
     public static BufferedImage redApple, greenApple, strawberry, toast, blueKey, greenKey, banana, candy, candyBar, goldKey, yellowKey, orangeKey,
-            explosion1, explosion2, explosion3, explosion4, explosion5, tankRed, bullet;
+            explosion1, explosion2, explosion3, explosion4, explosion5, tankRed, bullet, grass, soil, rock, wall;
 
-    public static BufferedImage[] expWithSmoke, explosions;
+    public static BufferedImage[] expWithSmoke, explosions, tiles;
 
     //These are the width and height of each photos inside SpriteSheet sheetExplosionWithSpoke
-    private static final int WIDTHOFEXPWITHSMOKE = 128;
-    private static final int HEIGHTOFEXPWITHSMOKE = 127;
+    private static final int WIDTHOFEXPWITHSMOKE = 128, HEIGHTOFEXPWITHSMOKE = 127,
+                                SIZEOFTILE = 64;
 
     //This is the distance along the x which set to be the beginning borderline of each photo inside our split sheet
     private static int xForEachImg = 0;
@@ -72,7 +72,21 @@ public class Assets {
 
         bullet = sheetOfExplosions.crop(6, 5,5,5);
 
-//        bullet = expWithSmoke[0];
+        SpriteSheet tile = new SpriteSheet(ImageLoader.loadImage("/textures/master-tileset.png"));
+        tiles = new BufferedImage[50];
+
+        int numOfTiles = 0;
+        for(int j = 0; j < 5; j++){
+            for(int i = 0; i < 10; i++){
+                tiles[numOfTiles] = tile.crop(i * SIZEOFTILE, j * SIZEOFTILE, SIZEOFTILE, SIZEOFTILE);
+                numOfTiles++;
+            }
+        }
+        grass = tiles[20];
+        soil = tiles[31];
+        rock = tiles[36];
+        wall = tiles[40];
+
 
     }
 }

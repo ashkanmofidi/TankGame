@@ -185,7 +185,7 @@ public class Game implements Runnable{
         x & y are the coordinates of the place that we want to place the fire
         WIDTH & HEIGHT are the size of each frame
      */
-    public void expWithSmoke(Graphics g, BufferStrategy bs, int x, int y){
+    public void expWithSmoke(Graphics g, int x, int y){
         int timePerFrame = 10;
         final int WIDTH = 128;
         final int HEIGHT = 128;

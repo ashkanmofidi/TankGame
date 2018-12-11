@@ -1,5 +1,7 @@
 package com.AshkanMofidi.TankGame.entities;
 
+import com.AshkanMofidi.TankGame.Game;
+
 import java.awt.Graphics;
 
 /*
@@ -21,13 +23,22 @@ public abstract class Entity {
         So, why float? Because, the calculations in my game is not going to be perfect, and this is how I can achieve a smooth look in my game
      */
     protected float x, y;
+    protected Game game;
+
+    /*
+        Let's define two variables for the width and height of our entities
+     */
+    protected int width, height;
 
     /*
         I define the constructor of the game and I pass the x, and y as two arguments to set the start point of my entity
      */
-    public Entity(float x, float y){
+    public Entity(Game game, float x, float y, int width, int height){
+        this.game = game;
         this.x = x;
         this.y = y;
+        this.width = width;
+        this.height = height;
     }
 
     /*
@@ -38,5 +49,30 @@ public abstract class Entity {
     public abstract boolean tick();
 
     public abstract void render(Graphics g) throws Exception;
+
+    public int getWidth(){
+        return width;
+    }
+    public int getHeight(){
+        return height;
+    }
+    public float getX(){
+        return x;
+    }
+    public float getY(){
+        return y;
+    }
+    public void setX(float x){
+        this.x = x;
+    }
+    public void setY(float y){
+        this.y = y;
+    }
+    public void setWidth(int width){
+        this.width = width;
+    }
+    public void setHeight(int height){
+        this.height = height;
+    }
 
 }
